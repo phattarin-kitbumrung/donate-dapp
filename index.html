@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Donate via blockchain</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>    
+  </head>
+  <body class="container">
+    <h1 class="page-header">Donate system via Blockchain</h1>
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="newAmount">Amount:&nbsp;</label></td>
+                <td>
+                  <input class="form-control" id="newAmount" style="color:rgb(135, 135, 150)">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="sendDonate()" class="btn btn-primary">Donate</a>
+        </form>
+      </div>
+    </div> 
+    <br></br>
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="newAmount2">Amount:&nbsp;</label></td>
+                <td>
+                  <input class="form-control" id="newAmount2" style="color:rgb(135, 135, 150)">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="getReward()" class="btn btn-primary">GetReward</a>
+        </form>
+      </div>
+    </div> 
+    <br></br>
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Total amount of Donation</h3>
+        <form class="form-inline" role="form">
+          <a href="#" onclick="totalAmount()" class="btn btn-primary">Get</a>
+          <div class="form-group">
+            <table>
+              <tr>
+                <td>
+                  <label id="lastAmount" style="color:rgb(135, 135, 150)"> </label>
+                </td>                          
+              </tr>
+            </table>
+          </div>                
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
